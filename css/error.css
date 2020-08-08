@@ -1,0 +1,155 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  background: #17141d;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.glitch-effect {
+  position: relative;
+  font-size: 3em;
+  font-weight: 700;
+  animation: smallGlitch 500ms infinite linear;
+}
+.glitch-effect .glitch-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.glitch-effect .glitch-text .glitch-text-1 {
+  color: #e600ff;
+  animation: glitch-1 500ms infinite linear;
+}
+.glitch-effect .glitch-text .glitch-text-2 {
+  color: #11B7F2;
+  animation: glitch-2 500ms infinite linear 100ms;
+}
+
+@keyframes smallGlitch {
+  0%, 100% {
+    transform: translate(0);
+  }
+  8.333333% {
+    transform: translate(1px, 1px);
+  }
+  16.666666% {
+    transform: translate(1px, 0);
+  }
+  25% {
+    transform: translate(0, 1px);
+  }
+  33.333333% {
+    transform: translate(0, -1px);
+  }
+  41.666666% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  58.333333% {
+    transform: translate(-1px, 0);
+  }
+  66.666666% {
+    transform: translate(0, 1px);
+  }
+  75% {
+    transform: translate(-1px, 1px);
+  }
+  83.333333% {
+    transform: translate(0, -1px);
+  }
+  91.666666% {
+    transform: translate(-1px, -1px);
+  }
+}
+@keyframes glitch-1 {
+  0%, 100% {
+    transform: translate(0);
+  }
+  8.333333% {
+    transform: translate(0, 3px);
+  }
+  16.666666% {
+    transform: translate(2px, 2px);
+  }
+  25% {
+    transform: translate(3px, 0);
+  }
+  33.333333% {
+    transform: translate(2px, -3px);
+  }
+  41.666666% {
+    transform: translate(0, -2px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  58.333333% {
+    transform: translate(0, 2px);
+  }
+  66.666666% {
+    transform: translate(-3px, 3px);
+  }
+  75% {
+    transform: translate(-2px, 0);
+  }
+  83.333333% {
+    transform: translate(-2px, -2px);
+  }
+  91.666666% {
+    transform: translate(0, -3px);
+  }
+}
+@keyframes glitch-2 {
+  0%, 100% {
+    transform: translate(0);
+  }
+  8.333333% {
+    transform: translate(0, 3px);
+  }
+  16.666666% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-3px, 0);
+  }
+  33.333333% {
+    transform: translate(-2px, -3px);
+  }
+  41.666666% {
+    transform: translate(0, -2px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  58.333333% {
+    transform: translate(0, 2px);
+  }
+  66.666666% {
+    transform: translate(3px, 3px);
+  }
+  75% {
+    transform: translate(2px, 0);
+  }
+  83.333333% {
+    transform: translate(2px, -2px);
+  }
+  91.666666% {
+    transform: translate(0, -3px);
+  }
+}
